@@ -1,0 +1,172 @@
+.nav-menu a.hamburger {
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+  }
+  .nav-menu .hamburgerIcon span.regular {
+    display: block;
+    color: #3b566e;
+    background-color: #3b566e;
+    font-size: 1px;
+    width: 30px;
+    height: 2px;
+    transition: background-color 0.3s;
+  }
+  .nav-menu .hamburgerIcon span.before {
+    display: block;
+    color: #3b566e;
+    background-color: #3b566e;
+    font-size: 1px;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    bottom: 3px;
+    transition: all.3s;
+  }
+  .nav-menu .hamburgerIcon span.after {
+    display: block;
+    color: #3b566e;
+    background-color: #3b566e;
+    font-size: 1px;
+    width: 25px;
+    height: 2px;
+    position: absolute;
+    top: 3px;
+    transition: all 0.3s;
+  }
+  .nav-menu .hamburgerIcon span.regular.active1 {
+    background-color: white;
+    transition: all 0.3s;
+  }
+  .nav-menu .hamburgerIcon span.after.active1 {
+    transform: rotate(-45deg);
+    top: 13px;
+    transition: all 0.3s;
+  }
+  .nav-menu .hamburgerIcon span.before.active1 {
+    transform: rotate(45deg);
+    bottom: 15px;
+    transition: all 0.3s;
+  }
+  .nav-menu {
+    left: 0;
+    right: 0;
+    z-index: 999;
+    top: 0;
+    position: absolute;
+    transition: all 0.5s;
+  }
+  .nav-menu .nav-list .nav-item a {
+    font-weight: 400;
+  }
+  .nav-menu .dropdown .dropdown-menu.navbarHoverBlock {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5%);
+  }
+  .nav-menu .dropdown:hover .dropdown-menu.navbarHoverBlock {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    transition: all 0.3s;
+  }
+  .nav-menu .dropdown .dropp-item:hover .dropdown-menu.navbarHoverBlock {
+    display: block;
+  }
+  
+  .nav-menu .dropdown-menu {
+    border: none;
+    padding: 0;
+    margin-top: 0;
+  }
+  .nav-menu .dropdown-menu a {
+    margin: 0;
+    border-bottom: 1px solid #f5f5f5;
+    font-weight: 400;
+    transition: padding-left 0.3s;
+    line-height: 40px;
+  }
+  .nav-menu .dropdown-menu a:last-child {
+    border-bottom: none;
+  }
+  .nav-menu .dropdown-menu a:hover {
+    border-left: 4px solid rgb(89,100,232);
+    padding-left: 30px;
+    transition: 0.3s;
+  }
+  
+  .nav-menu.others {
+    background-color: white !important;
+  }
+  
+  .nav-menu .logo {
+    margin-top: 3px;
+    margin-right: 80px;
+  }
+  .nav-list li a {
+    text-decoration: none;
+    color: #6f8ba4 !important;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-weight: 800;
+    font-size: 14px;
+  }
+  .header-buttons {
+    display: flex;
+    margin-right: 5px;
+    margin-top: 15px;
+    list-style-type: none;
+    text-decoration: none;
+  }
+  .header-buttons a {
+    padding: 3px 30px;
+    margin: 5px;
+    font-size: 14px;
+  }
+  .header-buttons #up {
+    background-color: rgb(89,100,232);
+    border: 1px solid rgb(89,100,232);
+    color: white !important;
+    transition: 0.3s;
+  }
+  .header-buttons #upDiffer {
+    background: linear-gradient(135deg, rgb(89,100,232) 0%, #565178 100%);
+    color: white;
+  }
+  .header-buttons #up:hover {
+    background-color: white !important;
+    color: rgb(89,100,232) !important;
+  }
+  .header-buttons #in {
+    background-color: white;
+    color: rgb(89,100,232) !important;
+  }
+  .header-buttons #in:hover {
+    background-color: rgb(89,100,232);
+    color: white !important;
+  }
+  @media only screen and (max-width: 376px) {
+    .nav-list {
+      background-color: white;
+    }
+    .header-buttons {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 812px) {
+    .nav-list {
+      background-color: white;
+    }
+    .header-buttons {
+      display: none;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .nav-list {
+      background-color: white;
+    }
+  }
